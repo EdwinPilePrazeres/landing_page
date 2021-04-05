@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dela Gothic One', cursive;
+}
+.big_body {
+    position: relative;
+    width: 100%;
+    // max-width: 1440px;
+    margin: auto;
+    height: 100vh;
+    min-height: 700px;
+    background: rgb(2,77,90);
+    background: -moz-linear-gradient(94deg, rgba(2,77,90,1) 0%, rgba(254,168,90,1) 100%);
+    background: -webkit-linear-gradient(94deg, rgba(2,77,90,1) 0%, rgba(254,168,90,1) 100%);
+    background: linear-gradient(94deg, rgba(2,77,90,1) 0%, rgba(254,168,90,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#024d5a",endColorstr="#fea85a",GradientType=1);
+
+    .container {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        right:10%;
+        bottom: 10%;
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        background: url("./images/wallpaper.jpg"), #151729 no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        
+        &::before {
+            content: 'To the moon  ...and beyond';
+            max-width: 700px;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 5vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            // font-weight: 700;
+            line-height: .9em;
+
+            @media screen and (min-width: 1600px) {
+                max-width: 950px;
+                font-size: 96px;
+
+            }
+        }
+
+        .img-box {
+            position: absolute;
+            bottom: 30%;
+            right: 0%;
+            height: 35vw;
+            width: auto;
+            // margin-left: 735px;
+            z-index: 10;
+            max-height: 667px;
+            @media screen and (max-width: 991px) {
+                bottom: 50%;
+                right: 23%;
+            }
+          
+
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        .vertical_text {
+            color: #fff;
+            font-size: 10px;
+            letter-spacing: 3.5px;
+            position: absolute;
+            font-weight: lighter;
+
+            &:nth-child(2) {
+                left: 0;
+                transform: rotate(.75turn) translate(0, -800%);
+            }
+
+            &:nth-child(3) {
+                right: 0;
+                transform: rotate(.25turn) translate(0, -650%);
+            }
+            @media screen and (max-width:600px){
+                display: none;
+            }
+        }
+
+        .social_media {
+            color: #fff;
+            position: absolute;
+            font-size: 25px;
+            left: 2%;
+            bottom: 2%;
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+
+            .icons{
+                transition: 0.5s ease;
+                
+
+                &:hover {
+                    cursor: not-allowed;
+                    color: #fea85a;
+                    transform: translateY(-10px) ;
+                    
+                }
+            }
+        }
+
+        
+    }
+    
+}

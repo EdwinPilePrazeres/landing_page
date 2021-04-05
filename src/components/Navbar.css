@@ -1,0 +1,210 @@
+.navbar {
+    /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
+    background: transparent;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    z-index: 999;
+    /* width: 100%; */
+  }
+  
+  .navbar_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 1500px;
+  }
+  
+  .navbar_logo {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 140px;
+  }
+  .navbar_logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+  }
+
+  .fas {
+    color: #fff
+  }
+  
+  .nav_menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: center;
+    /* margin-right: 2rem; */
+
+  }
+  
+  .nav_items {
+    height: 80px;
+  }
+  
+  .nav_links {
+    color: #fff;
+    /* color: #000; */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+
+  .nav_links.active {
+    border-bottom: 4px solid #fff;
+    margin-bottom: -4px;
+  }
+  
+  .nav_links:hover {
+    border-bottom: 4px solid #fff;
+    margin-bottom: -4px;
+    cursor: not-allowed;
+    /* transition: all 0.2s ease-out; */
+  }
+
+  .nav_Button {
+    color: #fff;
+    /* color: #000; */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+
+  .nav_Button:hover {
+    border-bottom: 4px solid #fff;
+    margin-bottom: -4px;
+    cursor: pointer;
+    /* transition: all 0.2s ease-out; */
+  }
+  
+  .fabars {
+    color: #fff;
+  }
+  
+  .nav_links_mobile {
+    display: none;
+  }
+  
+  .menu_icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 1100px) {
+
+
+    .NavbarItems {
+      position: relative;
+    }
+  
+    .nav_menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-height: auto;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav_menu.active {
+      background: rgb(1,1,1);
+      background: -moz-linear-gradient(0deg, rgba(1,1,1,1) 0%, rgba(17,24,34,1) 100%);
+      background: -webkit-linear-gradient(0deg, rgba(1,1,1,1) 0%, rgba(17,24,34,1) 100%);
+      background: linear-gradient(0deg, rgba(1,1,1,1) 0%, rgba(17,24,34,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endColorstr="#111822",GradientType=1);
+      
+      /* background: red; */
+      left: 0;
+      right: 0;
+      height: 500px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 10;
+      overflow-y: scroll;
+    }
+  
+    .nav_links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav_links:hover {
+      background-color: #fff;
+      color: #242424;
+      border-radius: 0;
+      cursor: not-allowed;
+    }
+    .nav_links.active {
+      background-color: #fff;
+      color: #242424;
+      border-radius: 0;
+    }
+  
+    .navbar_logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menu_icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .fa_times {
+      color: #fff;
+      font-size: 2rem;
+    }
+  
+    .nav_links_mobile {
+      display: block;
+      text-align: center;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      background-color: transparent;
+      color: #fff;
+      padding: 14px 20px;
+      border: 1px solid #fff;
+      transition: all 0.3s ease-out;
+    }
+  
+    .nav_links_mobile:hover {
+      background: #fff;
+      color: #242424;
+      transition: 250ms;
+      cursor: not-allowed;
+    }
+  }
